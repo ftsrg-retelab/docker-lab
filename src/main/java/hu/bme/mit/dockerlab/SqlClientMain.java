@@ -22,7 +22,7 @@ public class SqlClientMain {
 
 		try (final Connection connection = DriverManager.getConnection(url, USER, PASSWORD)) {
 			try (final Statement statement = connection.createStatement()) {
-				try (ResultSet rs = statement.executeQuery("SELECT * FROM golf")) {
+				try (ResultSet rs = statement.executeQuery("SELECT DISTINCT outlook FROM golf")) {
 					while (rs.next()) {
 						System.out.println(rs.getString(1));
 					}
