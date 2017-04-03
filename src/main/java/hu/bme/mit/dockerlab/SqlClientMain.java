@@ -10,7 +10,7 @@ public class SqlClientMain {
 
 	private static final String USER = "root";
 	private static final String PASSWORD = "retelab";
-	private static final String HOSTNAME = "127.0.0.1";
+	private static final String HOSTNAME = "127.0.0.1"; // TODO set this hostname
 	private static final int PORT = 3306;
 
 	public static void main(String[] args) throws SQLException {
